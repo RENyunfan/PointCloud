@@ -10,29 +10,9 @@
 >
 > renyunfan@berkeley.edu
 
-
-```mermaid
-gantt
-    dateFormat  YYYY-MM-DD
-    title Solid State Lidar
-
-    section PCL
-    Install PCL            		:done,    des1, 2020-02-11,1d
-    PCL groundSeg               :active,  des2, 2020-02-14, 3d
-    PCL ObjectSeg               :         des3, after des2, 15d
-    PCL Noise Filter            :         des4, after 2020-02-14, 5d
-
-    section Learning
-    SqueezeSeg						    :L1, 2020-02-11,20d
-    PointNet					        :L2, after L1, 2d
-
-    section Geometrary
-    Rigidbody Transformation              :active, a1, 2020-03-01, 5d
+![](./source/image/gantt214.png)
 
 
-  
-
-```
 
 
 # 0 Idea
