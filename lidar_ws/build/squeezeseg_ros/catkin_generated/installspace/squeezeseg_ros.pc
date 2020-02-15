@@ -1,0 +1,8 @@
+prefix=/home/kevin/workSpace/PointCloud/lidar_ws/install
+
+Name: squeezeseg_ros
+Description: Description of squeezeseg_ros
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

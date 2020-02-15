@@ -1,0 +1,8 @@
+prefix=/home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_test/cmake-build-debug/devel
+
+Name: pcl_test
+Description: Description of pcl_test
+Version: 0.0.1
+Cflags: -I/home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_test/include
+Libs: -L${prefix}/lib 
+Requires: roscpp sensor_msgs pcl_ros
