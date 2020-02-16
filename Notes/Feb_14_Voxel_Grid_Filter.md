@@ -398,3 +398,44 @@ std::vector<int > indexs = { 1, 2, 5 };//声明索引值
 pcl::copyPointCloud(*cloud, indexs, *cloud_p);//将对应索引的点存储
 ```
 
+## 4.2 从点云中提取一个子集
+
+首先创建一个VoxelGrid滤波器对数据进行下采样,进行下采样科技加速处理过程,减少分割循环.
+
+```cpp
+pcl::VoxelGrid<sensor_msgs::PointCloud2> sor;	//体素栅格下的原始对象
+sor.setInputCloud(cloud_blob);					//设置下采样原始点云数据
+sor.setLeafSize(0.01f,0.01f,0.01f);				//设置体素大小
+sor.filter(*cloud_filtered_blob);				//执行采样保存数据
+```
+
+随后我们将处理参数化分割, 具体原因我们留到后续分割的部分再详细学习.
+
+```cpp
+pcl::ModelCoefficients::Ptrcoefficients(new pcl::ModelCoefficients());
+pcl::PointIndices::Ptrinliers(new pcl::ModelCoefficients());
+pcl::SACSegmentation<pcl::PointXYZ> seg;  //创建分割对象
+seg.setOptimizeCoefficients(true);        //设置对估计的模型参数进行优化处理
+seg.setModelType(pcl::SACMODEL_PLANE);    //设置分割模型类别
+seg.setMethodType(pcl::SAC_RANSAC);       //设置用哪个随机参数估计方法
+seg.setMaxIterations(1000);                //设置最大迭代次数
+seg.setDistanceThreshold(0.01);            //设置判断是否为模型内点的距离阈值
+```
+
+设置extraction filter的实际参数
+
+```cpp
+pcl::ExtractIndices<pcl::PointXYZ> extract; //创建点云提取对象
+extract.setInputCloud(cloud_filtered);      //设置输入点云
+extract.setIndices(inliers);                 //设置分割后的内点为需要提取的点集
+extract.setNegative(false);                  //设置提取内点而非外点
+extract.filter(*cloud_p);                    //提取输出存储到cloud_p
+```
+
+为了处理点云中包含多个模型，我们在一个循环中执行该过程，并在每次模型被提取后，我们保存剩余的点，进行迭代。模型内点通过分割过程获取，如下
+
+```cpp
+seg.setInputCloud(cloud_filtered);
+seg.segment(*inliers,*coefficients);
+```
+

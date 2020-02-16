@@ -1,2 +1,2 @@
-pcl_test:squeezeseg_ros
+pcl_process:pcl_test:squeezeseg_ros
 -DCATKIN_DEVEL_PREFIX=/home/kevin/workSpace/PointCloud/lidar_ws/devel -DCMAKE_INSTALL_PREFIX=/home/kevin/workSpace/PointCloud/lidar_ws/install -G Unix Makefiles

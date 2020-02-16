@@ -126,6 +126,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/kevin/workSpace/PointCloud/lidar_ws/build/gtest/cmake_install.cmake")
+  include("/home/kevin/workSpace/PointCloud/lidar_ws/build/pcl_process/cmake_install.cmake")
   include("/home/kevin/workSpace/PointCloud/lidar_ws/build/pcl_test/cmake_install.cmake")
   include("/home/kevin/workSpace/PointCloud/lidar_ws/build/squeezeseg_ros/cmake_install.cmake")
 

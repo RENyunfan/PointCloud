@@ -36,6 +36,32 @@ void PclTestCore::clip_above(double clip_height, const pcl::PointCloud<pcl::Poin
     cliper.filter(*out);
 }
 
+void PclTestCore::Trans2D(double clip_height, const pcl::PointCloud<pcl::PointXYZI>::Ptr in,
+                             const pcl::PointCloud<pcl::PointXYZI>::Ptr out)
+{
+//    pcl::ExtractIndices<pcl::PointXYZI> cliper;
+//
+//    cliper.setInputCloud(in);
+//    pcl::PointIndices indices;
+//    double step = 0.1;
+//#pragma omp for
+//    for (size_t i = 0; i < 500; i++)
+//    {
+//        for (size_t j = 0; j < 500; j++){
+//            H = max
+//
+//        }
+//        if (in->points[i].z > clip_height)
+//        {
+//            indices.indices.push_back(i);
+//        }
+//    }
+//    cliper.setIndices(boost::make_shared<pcl::PointIndices>(indices));
+//    cliper.setNegative(true); //ture to remove the indices
+//    cliper.filter(*out);
+}
+
+
 void PclTestCore::remove_close_pt(double min_distance, const pcl::PointCloud<pcl::PointXYZI>::Ptr in,
                                   const pcl::PointCloud<pcl::PointXYZI>::Ptr out)
 {
@@ -215,6 +241,13 @@ void PclTestCore::point_cb(const sensor_msgs::PointCloud2ConstPtr &in_cloud_ptr)
 
     pcl::fromROSMsg(*in_cloud_ptr, *current_pc_ptr);
 
+    /*
+     * current_pc_ptr 是已经从PointCloud2中解码出来的PCL中的点云类型.
+     * 现在我要将这个点云压缩成二维的图像
+     * 首先我要将点云栅格化 然后找到每个栅格中z的最大点,然后讲最大点的z值存储到一个二维数组中,再转化成Mat类型就可以进行OpenCV中的操作了.
+     *
+     * */
+
     clip_above(CLIP_HEIGHT, current_pc_ptr, cliped_pc_ptr);
     pcl::PointCloud<pcl::PointXYZI>::Ptr remove_close(new pcl::PointCloud<pcl::PointXYZI>);
 
@@ -257,4 +290,10 @@ void PclTestCore::point_cb(const sensor_msgs::PointCloud2ConstPtr &in_cloud_ptr)
 
     publish_cloud(pub_ground_, ground_cloud_ptr, in_cloud_ptr->header);
     publish_cloud(pub_no_ground_, no_ground_cloud_ptr, in_cloud_ptr->header);
+    // 定义两个指针,其中PointCloud是一个模板类,而PointXYZI是一种数据结构
+    // 定义了四个参数,包括三维空间点的坐标(XYZ)和一个反射强度
+    // 反射强度一定程度上可以反应物体的颜色
+
+
+
 }

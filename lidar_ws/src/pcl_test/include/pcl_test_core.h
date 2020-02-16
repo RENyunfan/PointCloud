@@ -6,7 +6,7 @@
 #include <pcl/point_types.h>
 #include <pcl/conversions.h>
 #include <pcl_ros/transforms.h>
-
+#include <pcl/filters/voxel_grid.h>
 #include <pcl/filters/extract_indices.h>
 
 #include <sensor_msgs/PointCloud2.h>
@@ -65,9 +65,11 @@ private:
   void publish_cloud(const ros::Publisher &in_publisher,
                      const pcl::PointCloud<pcl::PointXYZI>::Ptr in_cloud_to_publish_ptr,
                      const std_msgs::Header &in_header);
-
+  void Trans2D(double clip_height, const pcl::PointCloud<pcl::PointXYZI>::Ptr in,
+            const pcl::PointCloud<pcl::PointXYZI>::Ptr out);
 public:
   PclTestCore(ros::NodeHandle &nh);
   ~PclTestCore();
   void Spin();
 };
+
