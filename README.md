@@ -39,18 +39,20 @@ It takes more time to initialize the scene, semantically segment the scene in ad
 
 # 1 Process
 
-## Feb. 11
+## Feb
+
+### 11 SqueezeSeg
 
 * Get the date.
 * Try some learing method to segment the car from the point cloud image.
 
-### SqueezeSeg
+
 
 Modified and reproduced the image segmentation algorithm in SqueezeSeg, using existing models to segment the point cloud image.
 
 <img src="./source/image/squeezeseg.png" alt="test" style="zoom:50%;" />
 
-## Feb. 14 
+### 14 Ground filter
 
 ### 
 
@@ -68,7 +70,7 @@ Modified and reproduced the image segmentation algorithm in SqueezeSeg, using ex
     padding: 2px;">From left to right: Ground, Original, No-ground-Seg</div>
 </center>
 
-## Feb. 15 
+### 15 
 
 ### Voxel Grid Filter
 
@@ -97,7 +99,11 @@ C-->D
 
 ```
 
+### 17 3D to 2D
 
+[Notes of 3D to 2D](../Notes/Feb_17_Birdseye.md)
+
+![](./source/image/3D22D.png)
 
 # 2 To Do List
 
