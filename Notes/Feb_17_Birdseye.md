@@ -77,6 +77,10 @@ Mat out(map_width,map_height,CV_8UC1,Scalar(0));
 
   这时候只需要删除掉环境变量里的conda就行了.
 
+  ![image-20200218114029018](Feb_17_Birdseye.assets/image-20200218114029018.png)
+
+  
+
 * 创建矩阵一定要清零
 
 * 矩阵减法一定要维数相同, 否则出大问题.

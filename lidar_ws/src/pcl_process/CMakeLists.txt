@@ -42,3 +42,10 @@ target_link_libraries(${PROJECT_NAME}_node
         ${PCL_LIBRARIES}
         ${OpenCV_LIBRARIES}
         )
+
+#add_executable(tesst src/coo.cpp )
+#target_link_libraries(tesst
+#        ${catkin_LIBRARIES}
+#        ${PCL_LIBRARIES}
+#        ${OpenCV_LIBRARIES}
+#        )

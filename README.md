@@ -54,8 +54,6 @@ Modified and reproduced the image segmentation algorithm in SqueezeSeg, using ex
 
 ### 14 Ground filter
 
-### 
-
 [Notes](./Notes/Feb_14_Voxel_Grid_Filter.md)
 
 
@@ -70,9 +68,7 @@ Modified and reproduced the image segmentation algorithm in SqueezeSeg, using ex
     padding: 2px;">From left to right: Ground, Original, No-ground-Seg</div>
 </center>
 
-### 15 
-
-### Voxel Grid Filter
+### 15  Voxel Grid Filter
 
 <center>
     <img style="border-radius: 0.3125em;
@@ -85,7 +81,7 @@ Modified and reproduced the image segmentation algorithm in SqueezeSeg, using ex
     padding: 2px;">Voexl seg (1,1,1)</div>
 </center>
 
-### Idea
+**Idea**
 
 ```mermaid
 graph LR
@@ -101,9 +97,24 @@ C-->D
 
 ### 17 3D to 2D
 
-[Notes of 3D to 2D](../Notes/Feb_17_Birdseye.md)
+[Notes of 3D to 2D](./Notes/Feb_17_Birdseye.md)
 
 ![](./source/image/3D22D.png)
+
+### 18 GMM background seg
+
+[Feb_18_Gaussian Mixed Model.md](./Notes/Feb_18_Gaussian Mixed Model.md)
+
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="README.assets/Gaussian.png">
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+	display: inline-block;
+    color: #000000;
+    padding: 2px;">From left to right: Original, GMM+Medium Filter, Only GMM</div>
+</center>
 
 # 2 To Do List
 
