@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/pcl_test_node.dir/src/pcl_test_node.cpp.o"
   "CMakeFiles/pcl_test_node.dir/src/pcl_test_core.cpp.o"
-  "/home/kevin/workSpace/PointCloud/lidar_ws/devel/lib/pcl_test/pcl_test_node.pdb"
-  "/home/kevin/workSpace/PointCloud/lidar_ws/devel/lib/pcl_test/pcl_test_node"
+  "/home/kevin/workSpace/static-detection/lidar_ws/devel/lib/pcl_test/pcl_test_node.pdb"
+  "/home/kevin/workSpace/static-detection/lidar_ws/devel/lib/pcl_test/pcl_test_node"
 )
 
 # Per-language clean rules from dependency scanning.

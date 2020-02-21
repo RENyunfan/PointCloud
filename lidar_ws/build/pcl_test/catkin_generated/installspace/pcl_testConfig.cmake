@@ -67,14 +67,14 @@ set(pcl_test_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(pcl_test_SOURCE_PREFIX /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_test)
-  set(pcl_test_DEVEL_PREFIX /home/kevin/workSpace/PointCloud/lidar_ws/devel)
+  set(pcl_test_SOURCE_PREFIX /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_test)
+  set(pcl_test_DEVEL_PREFIX /home/kevin/workSpace/static-detection/lidar_ws/devel)
   set(pcl_test_INSTALL_PREFIX "")
   set(pcl_test_PREFIX ${pcl_test_DEVEL_PREFIX})
 else()
   set(pcl_test_SOURCE_PREFIX "")
   set(pcl_test_DEVEL_PREFIX "")
-  set(pcl_test_INSTALL_PREFIX /home/kevin/workSpace/PointCloud/lidar_ws/install)
+  set(pcl_test_INSTALL_PREFIX /home/kevin/workSpace/static-detection/lidar_ws/install)
   set(pcl_test_PREFIX ${pcl_test_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/kevin/workSpace/PointCloud/lidar_ws/install/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/kevin/workSpace/static-detection/lidar_ws/install/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

@@ -67,14 +67,14 @@ set(pcl_test_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(pcl_test_SOURCE_PREFIX /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_test)
-  set(pcl_test_DEVEL_PREFIX /home/kevin/workSpace/PointCloud/lidar_ws/devel)
+  set(pcl_test_SOURCE_PREFIX /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_test)
+  set(pcl_test_DEVEL_PREFIX /home/kevin/workSpace/static-detection/lidar_ws/devel)
   set(pcl_test_INSTALL_PREFIX "")
   set(pcl_test_PREFIX ${pcl_test_DEVEL_PREFIX})
 else()
   set(pcl_test_SOURCE_PREFIX "")
   set(pcl_test_DEVEL_PREFIX "")
-  set(pcl_test_INSTALL_PREFIX /home/kevin/workSpace/PointCloud/lidar_ws/install)
+  set(pcl_test_INSTALL_PREFIX /home/kevin/workSpace/static-detection/lidar_ws/install)
   set(pcl_test_PREFIX ${pcl_test_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(pcl_test_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_test/include " STREQUAL " ")
+if(NOT "/home/kevin/workSpace/static-detection/lidar_ws/src/pcl_test/include " STREQUAL " ")
   set(pcl_test_INCLUDE_DIRS "")
-  set(_include_dirs "/home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_test/include")
+  set(_include_dirs "/home/kevin/workSpace/static-detection/lidar_ws/src/pcl_test/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_test/include " STREQUA
         message(FATAL_ERROR "Project 'pcl_test' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'pcl_test' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_test/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'pcl_test' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/kevin/workSpace/static-detection/lidar_ws/src/pcl_test/${idir}'.  ${_report}")
     endif()
     _list_append_unique(pcl_test_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/kevin/workSpace/PointCloud/lidar_ws/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/kevin/workSpace/static-detection/lidar_ws/devel/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

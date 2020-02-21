@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kevin/workSpace/PointCloud/lidar_ws/src
+CMAKE_SOURCE_DIR = /home/kevin/workSpace/static-detection/lidar_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kevin/workSpace/PointCloud/lidar_ws/build
+CMAKE_BINARY_DIR = /home/kevin/workSpace/static-detection/lidar_ws/build
 
 # Utility rule file for _catkin_empty_exported_target.
 
@@ -63,10 +63,10 @@ pcl_test/CMakeFiles/_catkin_empty_exported_target.dir/build: _catkin_empty_expor
 .PHONY : pcl_test/CMakeFiles/_catkin_empty_exported_target.dir/build
 
 pcl_test/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	cd /home/kevin/workSpace/PointCloud/lidar_ws/build/pcl_test && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
+	cd /home/kevin/workSpace/static-detection/lidar_ws/build/pcl_test && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
 .PHONY : pcl_test/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 pcl_test/CMakeFiles/_catkin_empty_exported_target.dir/depend:
-	cd /home/kevin/workSpace/PointCloud/lidar_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kevin/workSpace/PointCloud/lidar_ws/src /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_test /home/kevin/workSpace/PointCloud/lidar_ws/build /home/kevin/workSpace/PointCloud/lidar_ws/build/pcl_test /home/kevin/workSpace/PointCloud/lidar_ws/build/pcl_test/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kevin/workSpace/static-detection/lidar_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kevin/workSpace/static-detection/lidar_ws/src /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_test /home/kevin/workSpace/static-detection/lidar_ws/build /home/kevin/workSpace/static-detection/lidar_ws/build/pcl_test /home/kevin/workSpace/static-detection/lidar_ws/build/pcl_test/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : pcl_test/CMakeFiles/_catkin_empty_exported_target.dir/depend
 

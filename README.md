@@ -10,10 +10,31 @@
 >
 > renyunfan@berkeley.edu
 
-![](./source/image/gantt214.png)
 
 
+```mermaid
+gantt
+    dateFormat  YYYY-MM-DD
+    title Solid State Lidar
 
+    section PCL
+    Install PCL            		:done,    des1, 2020-02-11,1d
+    PCL groundSeg               :done,  des2, 2020-02-14, 3d
+    PCL Noise Filter            :active         des3, after 2020-02-14, 5d
+    3D-2D						:done	des3, after des2,3D
+   
+
+    section Learning
+    SqueezeSeg						    :L1, 2020-02-11,20d
+    PointNet					        :L2, after L1, 2d
+
+    section Geometrary
+    Rigidbody Transformation              :active, a1, 2020-03-01, 5d
+
+
+  
+
+```
 
 # 0 Idea
 
@@ -115,6 +136,13 @@ C-->D
     color: #000000;
     padding: 2px;">From left to right: Original, GMM+Medium Filter, Only GMM</div>
 </center>
+
+## 20 GMM+pcl/filter 
+
+[Notes](./Notes/Feb_20_GMM_pclfilter.md)
+
+![](./Notes/Feb_20_GMM_pclfilter.assets/2D3D.png)
+
 
 # 2 To Do List
 

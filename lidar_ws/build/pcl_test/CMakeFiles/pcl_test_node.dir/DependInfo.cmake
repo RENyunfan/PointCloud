@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_test/src/pcl_test_core.cpp" "/home/kevin/workSpace/PointCloud/lidar_ws/build/pcl_test/CMakeFiles/pcl_test_node.dir/src/pcl_test_core.cpp.o"
-  "/home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_test/src/pcl_test_node.cpp" "/home/kevin/workSpace/PointCloud/lidar_ws/build/pcl_test/CMakeFiles/pcl_test_node.dir/src/pcl_test_node.cpp.o"
+  "/home/kevin/workSpace/static-detection/lidar_ws/src/pcl_test/src/pcl_test_core.cpp" "/home/kevin/workSpace/static-detection/lidar_ws/build/pcl_test/CMakeFiles/pcl_test_node.dir/src/pcl_test_core.cpp.o"
+  "/home/kevin/workSpace/static-detection/lidar_ws/src/pcl_test/src/pcl_test_node.cpp" "/home/kevin/workSpace/static-detection/lidar_ws/build/pcl_test/CMakeFiles/pcl_test_node.dir/src/pcl_test_node.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -48,7 +48,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/python2.7"
   "/usr/include/libxml2"
   "/usr/include/tcl"
-  "/home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_test/include"
+  "/home/kevin/workSpace/static-detection/lidar_ws/src/pcl_test/include"
   "/opt/ros/kinetic/include"
   "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/eigen3"

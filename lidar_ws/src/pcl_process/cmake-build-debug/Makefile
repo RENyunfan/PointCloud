@@ -48,10 +48,10 @@ RM = /home/kevin/App/clion-2019.3.4/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process
+CMAKE_SOURCE_DIR = /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/cmake-build-debug
+CMAKE_BINARY_DIR = /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -1365,6 +1365,33 @@ src/pcl_node.cpp.s:
 	$(MAKE) -f CMakeFiles/pcl_process_node.dir/build.make CMakeFiles/pcl_process_node.dir/src/pcl_node.cpp.s
 .PHONY : src/pcl_node.cpp.s
 
+src/pcl_tools.o: src/pcl_tools.cpp.o
+
+.PHONY : src/pcl_tools.o
+
+# target to build an object file
+src/pcl_tools.cpp.o:
+	$(MAKE) -f CMakeFiles/pcl_process_node.dir/build.make CMakeFiles/pcl_process_node.dir/src/pcl_tools.cpp.o
+.PHONY : src/pcl_tools.cpp.o
+
+src/pcl_tools.i: src/pcl_tools.cpp.i
+
+.PHONY : src/pcl_tools.i
+
+# target to preprocess a source file
+src/pcl_tools.cpp.i:
+	$(MAKE) -f CMakeFiles/pcl_process_node.dir/build.make CMakeFiles/pcl_process_node.dir/src/pcl_tools.cpp.i
+.PHONY : src/pcl_tools.cpp.i
+
+src/pcl_tools.s: src/pcl_tools.cpp.s
+
+.PHONY : src/pcl_tools.s
+
+# target to generate assembly for a file
+src/pcl_tools.cpp.s:
+	$(MAKE) -f CMakeFiles/pcl_process_node.dir/build.make CMakeFiles/pcl_process_node.dir/src/pcl_tools.cpp.s
+.PHONY : src/pcl_tools.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1472,6 +1499,9 @@ help:
 	@echo "... src/pcl_node.o"
 	@echo "... src/pcl_node.i"
 	@echo "... src/pcl_node.s"
+	@echo "... src/pcl_tools.o"
+	@echo "... src/pcl_tools.i"
+	@echo "... src/pcl_tools.s"
 .PHONY : help
 
 

@@ -94,11 +94,17 @@ mog->apply(src_YCrCb, foreGround, 0.005);
 
 部分重要参数介绍
 `nmixtures`：高斯模型个数，默认5个，最多8个，一般设为5就好，个人测试：设为8个的时候检测效果提升有限，但程序耗时增加；
+
 `backgroundRatio`：高斯背景模型权重和阈值，`nmixtures`个模型按权重排序后，只取模型权重累加值大于`backgroundRatio`的前几个作为背景模型。也就是说如果该值取得非常小，很可能只使用权重最大的高斯模型作为背景(因为仅一个模型权重就大于`backgroundRatio`了)；
+
 `fVarInit`：新建高斯模型的方差初始值，默认15；
+
 `fVarMax`：背景更新过程中，用于限制高斯模型方差的最大值，默认20；
+
 `fVarMin`：背景更新过程中，用于限制高斯模型方差的最小值，默认4；
+
 `varThresholdGen`：方差阈值，用于是否存在匹配的模型，如果不存在则新建一个；
+
 **全部API见**：[MOG2-api](https://docs.opencv.org/3.2.0/d7/d7b/classcv_1_1BackgroundSubtractorMOG2.html)
 
 ## 程序参考

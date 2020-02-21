@@ -1,79 +1,24 @@
-Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_124a7/fast 
-/usr/bin/make -f CMakeFiles/cmTC_124a7.dir/build.make CMakeFiles/cmTC_124a7.dir/build
-make[1]: Entering directory '/home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_124a7.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_124a7.dir/CheckSymbolExists.c.o   -c /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_124a7
-/home/kevin/App/clion-2019.2.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_124a7.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_124a7.dir/CheckSymbolExists.c.o  -o cmTC_124a7 
-CMakeFiles/cmTC_124a7.dir/CheckSymbolExists.c.o: In function `main':
-CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
-collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_124a7.dir/build.make:86: recipe for target 'cmTC_124a7' failed
-make[1]: *** [cmTC_124a7] Error 1
-make[1]: Leaving directory '/home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:121: recipe for target 'cmTC_124a7/fast' failed
-make: *** [cmTC_124a7/fast] Error 2
-
-File /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include <pthread.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef pthread_create
-  return ((int*)(&pthread_create))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-
-Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_ed459/fast 
-/usr/bin/make -f CMakeFiles/cmTC_ed459.dir/build.make CMakeFiles/cmTC_ed459.dir/build
-make[1]: Entering directory '/home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ed459.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_ed459.dir/CheckFunctionExists.c.o   -c /home/kevin/App/clion-2019.2.2/bin/cmake/linux/share/cmake-3.14/Modules/CheckFunctionExists.c
-Linking C executable cmTC_ed459
-/home/kevin/App/clion-2019.2.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed459.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_ed459.dir/CheckFunctionExists.c.o  -o cmTC_ed459 -lpthreads 
-/usr/bin/ld: cannot find -lpthreads
-collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_ed459.dir/build.make:86: recipe for target 'cmTC_ed459' failed
-make[1]: *** [cmTC_ed459] Error 1
-make[1]: Leaving directory '/home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:121: recipe for target 'cmTC_ed459/fast' failed
-make: *** [cmTC_ed459/fast] Error 2
-
-
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_8b4b0/fast && /usr/bin/make -f CMakeFiles/cmTC_8b4b0.dir/build.make CMakeFiles/cmTC_8b4b0.dir/build
-make[1]: Entering directory '/home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8b4b0.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_8b4b0.dir/src.c.o   -c /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_8b4b0
-/home/kevin/App/clion-2019.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8b4b0.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_8b4b0.dir/src.c.o  -o cmTC_8b4b0 
-CMakeFiles/cmTC_8b4b0.dir/src.c.o: In function `main':
+Run Build Command(s):/usr/bin/make cmTC_edd29/fast && /usr/bin/make -f CMakeFiles/cmTC_edd29.dir/build.make CMakeFiles/cmTC_edd29.dir/build
+make[1]: Entering directory '/home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_edd29.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_edd29.dir/src.c.o   -c /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_edd29
+/home/kevin/App/clion-2019.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_edd29.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_edd29.dir/src.c.o  -o cmTC_edd29 
+CMakeFiles/cmTC_edd29.dir/src.c.o: In function `main':
 src.c:(.text+0x3c): undefined reference to `pthread_create'
 src.c:(.text+0x48): undefined reference to `pthread_detach'
 src.c:(.text+0x59): undefined reference to `pthread_join'
 src.c:(.text+0x6d): undefined reference to `pthread_atfork'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_8b4b0.dir/build.make:86: recipe for target 'cmTC_8b4b0' failed
-make[1]: *** [cmTC_8b4b0] Error 1
-make[1]: Leaving directory '/home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:121: recipe for target 'cmTC_8b4b0/fast' failed
-make: *** [cmTC_8b4b0/fast] Error 2
+CMakeFiles/cmTC_edd29.dir/build.make:86: recipe for target 'cmTC_edd29' failed
+make[1]: *** [cmTC_edd29] Error 1
+make[1]: Leaving directory '/home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_edd29/fast' failed
+make: *** [cmTC_edd29/fast] Error 2
 
 
 Source file was:
@@ -95,4 +40,24 @@ int main(void)
 
   return 0;
 }
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_963cf/fast && /usr/bin/make -f CMakeFiles/cmTC_963cf.dir/build.make CMakeFiles/cmTC_963cf.dir/build
+make[1]: Entering directory '/home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_963cf.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_963cf.dir/CheckFunctionExists.c.o   -c /home/kevin/App/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_963cf
+/home/kevin/App/clion-2019.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_963cf.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_963cf.dir/CheckFunctionExists.c.o  -o cmTC_963cf -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_963cf.dir/build.make:86: recipe for target 'cmTC_963cf' failed
+make[1]: *** [cmTC_963cf] Error 1
+make[1]: Leaving directory '/home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_963cf/fast' failed
+make: *** [cmTC_963cf/fast] Error 2
+
+
 

@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/kevin/workSpace/PointCloud/lidar_ws/devel/setup.sh
+    local-name: /home/kevin/workSpace/static-detection/lidar_ws/devel/setup.sh

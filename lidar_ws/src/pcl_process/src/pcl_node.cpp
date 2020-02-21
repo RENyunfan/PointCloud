@@ -7,5 +7,6 @@ int main(int argc, char **argv)
     ros::NodeHandle nh;
 
     PclTestCore core(nh);
+    core.Spin();
     return 0;
 }

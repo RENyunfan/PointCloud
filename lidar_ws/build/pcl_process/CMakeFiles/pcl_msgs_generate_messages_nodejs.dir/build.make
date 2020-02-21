@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kevin/workSpace/PointCloud/lidar_ws/src
+CMAKE_SOURCE_DIR = /home/kevin/workSpace/static-detection/lidar_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kevin/workSpace/PointCloud/lidar_ws/build
+CMAKE_BINARY_DIR = /home/kevin/workSpace/static-detection/lidar_ws/build
 
 # Utility rule file for pcl_msgs_generate_messages_nodejs.
 
@@ -63,10 +63,10 @@ pcl_process/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/build: pcl_msgs_gen
 .PHONY : pcl_process/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/build
 
 pcl_process/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/clean:
-	cd /home/kevin/workSpace/PointCloud/lidar_ws/build/pcl_process && $(CMAKE_COMMAND) -P CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/kevin/workSpace/static-detection/lidar_ws/build/pcl_process && $(CMAKE_COMMAND) -P CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : pcl_process/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/clean
 
 pcl_process/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/depend:
-	cd /home/kevin/workSpace/PointCloud/lidar_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kevin/workSpace/PointCloud/lidar_ws/src /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process /home/kevin/workSpace/PointCloud/lidar_ws/build /home/kevin/workSpace/PointCloud/lidar_ws/build/pcl_process /home/kevin/workSpace/PointCloud/lidar_ws/build/pcl_process/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kevin/workSpace/static-detection/lidar_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kevin/workSpace/static-detection/lidar_ws/src /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process /home/kevin/workSpace/static-detection/lidar_ws/build /home/kevin/workSpace/static-detection/lidar_ws/build/pcl_process /home/kevin/workSpace/static-detection/lidar_ws/build/pcl_process/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : pcl_process/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/depend
 

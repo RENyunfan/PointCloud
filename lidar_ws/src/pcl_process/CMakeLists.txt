@@ -35,7 +35,7 @@ link_directories(${PCL_LIBRARY_DIRS}
         ${OpenCV_LIBRARIES}
         )
 
-add_executable(${PROJECT_NAME}_node src/pcl_node.cpp src/pcl_core.cpp)
+add_executable(${PROJECT_NAME}_node src/pcl_node.cpp src/pcl_core.cpp src/pcl_tools.cpp)
 
 target_link_libraries(${PROJECT_NAME}_node
         ${catkin_LIBRARIES}

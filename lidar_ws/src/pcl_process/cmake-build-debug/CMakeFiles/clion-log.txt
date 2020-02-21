@@ -1,14 +1,14 @@
-/home/kevin/App/clion-2019.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process
--- Using CATKIN_DEVEL_PREFIX: /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/cmake-build-debug/devel
--- Using CMAKE_PREFIX_PATH: /home/kevin/workSpace/PointCloud/lidar_ws/devel;/opt/ros/kinetic
--- This workspace overlays: /home/kevin/workSpace/PointCloud/lidar_ws/devel;/opt/ros/kinetic
+/home/kevin/App/clion-2019.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process
+-- Using CATKIN_DEVEL_PREFIX: /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/cmake-build-debug/devel
+-- Using CMAKE_PREFIX_PATH: /home/kevin/workSpace/static-detection/lidar_ws/devel;/opt/ros/kinetic
+-- This workspace overlays: /home/kevin/workSpace/static-detection/lidar_ws/devel;/opt/ros/kinetic
 -- Found PythonInterp: /usr/bin/python2 (found suitable version "2.7.12", minimum required is "2") 
 -- Using PYTHON_EXECUTABLE: /usr/bin/python2
 -- Using Debian Python package layout
 -- Using empy: /usr/bin/empy
 -- Using CATKIN_ENABLE_TESTING: ON
 -- Call enable_testing()
--- Using CATKIN_TEST_RESULTS_DIR: /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/cmake-build-debug/test_results
+-- Using CATKIN_TEST_RESULTS_DIR: /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/cmake-build-debug/test_results
 -- Found gtest sources under '/usr/src/gmock': gtests will be built
 -- Found gmock sources under '/usr/src/gmock': gmock will be built
 -- Found PythonInterp: /usr/bin/python2 (found version "2.7.12") 
@@ -69,4 +69,4 @@ but not all the files it references.
 -- looking for PCL_POINT_CLOUD_EDITOR
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/cmake-build-debug
+-- Build files have been written to: /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/cmake-build-debug

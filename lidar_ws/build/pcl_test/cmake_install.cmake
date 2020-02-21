@@ -1,8 +1,8 @@
-# Install script for directory: /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_test
+# Install script for directory: /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/kevin/workSpace/PointCloud/lidar_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/kevin/workSpace/static-detection/lidar_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,17 +33,17 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/kevin/workSpace/PointCloud/lidar_ws/build/pcl_test/catkin_generated/installspace/pcl_test.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/kevin/workSpace/static-detection/lidar_ws/build/pcl_test/catkin_generated/installspace/pcl_test.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pcl_test/cmake" TYPE FILE FILES
-    "/home/kevin/workSpace/PointCloud/lidar_ws/build/pcl_test/catkin_generated/installspace/pcl_testConfig.cmake"
-    "/home/kevin/workSpace/PointCloud/lidar_ws/build/pcl_test/catkin_generated/installspace/pcl_testConfig-version.cmake"
+    "/home/kevin/workSpace/static-detection/lidar_ws/build/pcl_test/catkin_generated/installspace/pcl_testConfig.cmake"
+    "/home/kevin/workSpace/static-detection/lidar_ws/build/pcl_test/catkin_generated/installspace/pcl_testConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pcl_test" TYPE FILE FILES "/home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_test/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pcl_test" TYPE FILE FILES "/home/kevin/workSpace/static-detection/lidar_ws/src/pcl_test/package.xml")
 endif()
 

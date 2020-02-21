@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_test/include/pcl_test_core.h
+/home/kevin/workSpace/static-detection/lidar_ws/src/pcl_test/include/pcl_test_core.h
 ros/ros.h
 -
 pcl_conversions/pcl_conversions.h
@@ -24,13 +24,13 @@ pcl/filters/extract_indices.h
 sensor_msgs/PointCloud2.h
 -
 
-/home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_test/src/pcl_test_core.cpp
+/home/kevin/workSpace/static-detection/lidar_ws/src/pcl_test/src/pcl_test_core.cpp
 pcl_test_core.h
-/home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_test/src/pcl_test_core.h
+/home/kevin/workSpace/static-detection/lidar_ws/src/pcl_test/src/pcl_test_core.h
 
-/home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_test/src/pcl_test_node.cpp
+/home/kevin/workSpace/static-detection/lidar_ws/src/pcl_test/src/pcl_test_node.cpp
 pcl_test_core.h
-/home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_test/src/pcl_test_core.h
+/home/kevin/workSpace/static-detection/lidar_ws/src/pcl_test/src/pcl_test_core.h
 
 /opt/ros/kinetic/include/boost_161_condition_variable.h
 boost/thread/detail/platform.hpp

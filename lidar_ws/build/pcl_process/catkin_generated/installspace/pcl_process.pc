@@ -1,4 +1,4 @@
-prefix=/home/kevin/workSpace/PointCloud/lidar_ws/install
+prefix=/home/kevin/workSpace/static-detection/lidar_ws/install
 
 Name: pcl_process
 Description: Description of pcl_process

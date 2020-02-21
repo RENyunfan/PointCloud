@@ -43,10 +43,10 @@ RM = /home/kevin/App/clion-2019.3.4/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process
+CMAKE_SOURCE_DIR = /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/cmake-build-debug
+CMAKE_BINARY_DIR = /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/cmake-build-debug
 
 # Utility rule file for sensor_msgs_generate_messages_lisp.
 
@@ -67,6 +67,6 @@ CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean:
 .PHONY : CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
 
 CMakeFiles/sensor_msgs_generate_messages_lisp.dir/depend:
-	cd /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/cmake-build-debug /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/cmake-build-debug /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/cmake-build-debug /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/cmake-build-debug /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/sensor_msgs_generate_messages_lisp.dir/depend
 

@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/usr/src/gmock")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/cmake-build-debug")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/cmake-build-debug")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

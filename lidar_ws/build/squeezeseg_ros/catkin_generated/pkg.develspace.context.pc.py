@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "squeezeseg_ros"
-PROJECT_SPACE_DIR = "/home/kevin/workSpace/PointCloud/lidar_ws/devel"
+PROJECT_SPACE_DIR = "/home/kevin/workSpace/static-detection/lidar_ws/devel"
 PROJECT_VERSION = "0.0.0"

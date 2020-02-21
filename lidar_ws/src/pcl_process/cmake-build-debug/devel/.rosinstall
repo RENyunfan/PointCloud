@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/cmake-build-debug/devel/setup.sh
+    local-name: /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/cmake-build-debug/devel/setup.sh

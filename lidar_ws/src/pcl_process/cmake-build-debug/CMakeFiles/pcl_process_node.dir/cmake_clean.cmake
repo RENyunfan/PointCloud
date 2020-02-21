@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/pcl_process_node.dir/src/pcl_core.cpp.o"
   "CMakeFiles/pcl_process_node.dir/src/pcl_node.cpp.o"
+  "CMakeFiles/pcl_process_node.dir/src/pcl_tools.cpp.o"
   "devel/lib/pcl_process/pcl_process_node"
   "devel/lib/pcl_process/pcl_process_node.pdb"
 )

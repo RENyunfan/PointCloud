@@ -43,10 +43,10 @@ RM = /home/kevin/App/clion-2019.3.4/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process
+CMAKE_SOURCE_DIR = /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/cmake-build-debug
+CMAKE_BINARY_DIR = /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/pcl_process_node.dir/depend.make
@@ -59,40 +59,55 @@ include CMakeFiles/pcl_process_node.dir/flags.make
 
 CMakeFiles/pcl_process_node.dir/src/pcl_node.cpp.o: CMakeFiles/pcl_process_node.dir/flags.make
 CMakeFiles/pcl_process_node.dir/src/pcl_node.cpp.o: ../src/pcl_node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pcl_process_node.dir/src/pcl_node.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pcl_process_node.dir/src/pcl_node.cpp.o -c /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/src/pcl_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pcl_process_node.dir/src/pcl_node.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pcl_process_node.dir/src/pcl_node.cpp.o -c /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/src/pcl_node.cpp
 
 CMakeFiles/pcl_process_node.dir/src/pcl_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pcl_process_node.dir/src/pcl_node.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/src/pcl_node.cpp > CMakeFiles/pcl_process_node.dir/src/pcl_node.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/src/pcl_node.cpp > CMakeFiles/pcl_process_node.dir/src/pcl_node.cpp.i
 
 CMakeFiles/pcl_process_node.dir/src/pcl_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pcl_process_node.dir/src/pcl_node.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/src/pcl_node.cpp -o CMakeFiles/pcl_process_node.dir/src/pcl_node.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/src/pcl_node.cpp -o CMakeFiles/pcl_process_node.dir/src/pcl_node.cpp.s
 
 CMakeFiles/pcl_process_node.dir/src/pcl_core.cpp.o: CMakeFiles/pcl_process_node.dir/flags.make
 CMakeFiles/pcl_process_node.dir/src/pcl_core.cpp.o: ../src/pcl_core.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pcl_process_node.dir/src/pcl_core.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pcl_process_node.dir/src/pcl_core.cpp.o -c /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/src/pcl_core.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pcl_process_node.dir/src/pcl_core.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pcl_process_node.dir/src/pcl_core.cpp.o -c /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/src/pcl_core.cpp
 
 CMakeFiles/pcl_process_node.dir/src/pcl_core.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pcl_process_node.dir/src/pcl_core.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/src/pcl_core.cpp > CMakeFiles/pcl_process_node.dir/src/pcl_core.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/src/pcl_core.cpp > CMakeFiles/pcl_process_node.dir/src/pcl_core.cpp.i
 
 CMakeFiles/pcl_process_node.dir/src/pcl_core.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pcl_process_node.dir/src/pcl_core.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/src/pcl_core.cpp -o CMakeFiles/pcl_process_node.dir/src/pcl_core.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/src/pcl_core.cpp -o CMakeFiles/pcl_process_node.dir/src/pcl_core.cpp.s
+
+CMakeFiles/pcl_process_node.dir/src/pcl_tools.cpp.o: CMakeFiles/pcl_process_node.dir/flags.make
+CMakeFiles/pcl_process_node.dir/src/pcl_tools.cpp.o: ../src/pcl_tools.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pcl_process_node.dir/src/pcl_tools.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pcl_process_node.dir/src/pcl_tools.cpp.o -c /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/src/pcl_tools.cpp
+
+CMakeFiles/pcl_process_node.dir/src/pcl_tools.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pcl_process_node.dir/src/pcl_tools.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/src/pcl_tools.cpp > CMakeFiles/pcl_process_node.dir/src/pcl_tools.cpp.i
+
+CMakeFiles/pcl_process_node.dir/src/pcl_tools.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pcl_process_node.dir/src/pcl_tools.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/src/pcl_tools.cpp -o CMakeFiles/pcl_process_node.dir/src/pcl_tools.cpp.s
 
 # Object files for target pcl_process_node
 pcl_process_node_OBJECTS = \
 "CMakeFiles/pcl_process_node.dir/src/pcl_node.cpp.o" \
-"CMakeFiles/pcl_process_node.dir/src/pcl_core.cpp.o"
+"CMakeFiles/pcl_process_node.dir/src/pcl_core.cpp.o" \
+"CMakeFiles/pcl_process_node.dir/src/pcl_tools.cpp.o"
 
 # External object files for target pcl_process_node
 pcl_process_node_EXTERNAL_OBJECTS =
 
 devel/lib/pcl_process/pcl_process_node: CMakeFiles/pcl_process_node.dir/src/pcl_node.cpp.o
 devel/lib/pcl_process/pcl_process_node: CMakeFiles/pcl_process_node.dir/src/pcl_core.cpp.o
+devel/lib/pcl_process/pcl_process_node: CMakeFiles/pcl_process_node.dir/src/pcl_tools.cpp.o
 devel/lib/pcl_process/pcl_process_node: CMakeFiles/pcl_process_node.dir/build.make
 devel/lib/pcl_process/pcl_process_node: /opt/ros/kinetic/lib/libpcl_ros_filters.so
 devel/lib/pcl_process/pcl_process_node: /opt/ros/kinetic/lib/libpcl_ros_io.so
@@ -776,7 +791,7 @@ devel/lib/pcl_process/pcl_process_node: /usr/lib/x86_64-linux-gnu/libvtkDICOMPar
 devel/lib/pcl_process/pcl_process_node: /usr/lib/x86_64-linux-gnu/libvtkmetaio-6.2.so.6.2.0
 devel/lib/pcl_process/pcl_process_node: /usr/lib/x86_64-linux-gnu/libz.so
 devel/lib/pcl_process/pcl_process_node: CMakeFiles/pcl_process_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable devel/lib/pcl_process/pcl_process_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable devel/lib/pcl_process/pcl_process_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pcl_process_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -789,6 +804,6 @@ CMakeFiles/pcl_process_node.dir/clean:
 .PHONY : CMakeFiles/pcl_process_node.dir/clean
 
 CMakeFiles/pcl_process_node.dir/depend:
-	cd /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/cmake-build-debug /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/cmake-build-debug /home/kevin/workSpace/PointCloud/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles/pcl_process_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/cmake-build-debug /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/cmake-build-debug /home/kevin/workSpace/static-detection/lidar_ws/src/pcl_process/cmake-build-debug/CMakeFiles/pcl_process_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/pcl_process_node.dir/depend
 
